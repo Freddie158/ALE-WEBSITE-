@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECTS</title>
+    <link rel="stylesheet" href="PROJECTS.css">
+</head>
+<body>
+    <header>
+     <div class="navbar">
+          <div class="logo">
+              <div class="lens-icon">
+                   <svg viewBox="0 0 100 100" width="40" height="40" xmlns="http://www.w3.org/2000/svg">
+                   <circle cx="50" cy="50" r="48" fill="#000"/>
+                  <circle cx="50" cy="50" r="35" fill="#ca07f1"/>
+                   <line x1="50" y1="15" x2="50" y2="85" stroke="#000" stroke-width="4"/>
+                    <line x1="15" y1="50" x2="85" y2="50" stroke="#000" stroke-width="4"/>
+                  <line x1="30" y1="30" x2="70" y2="70" stroke="#000" stroke-width="4"/>
+                   <line x1="70" y1="30" x2="30" y2="70" stroke="#000" stroke-width="4"/>
+                  </svg>
+              </div>
+              <span class="logo-text">
+                  Artistic <span class="highlight">lens</span> edits
+              </span>
+          </div> 
+              <div class="ul-navbar">
+                  <ul>
+                  <li><a href="http://127.0.0.1:5500/website/HOME.html">HOME</a></li>
+                  <li><a href="http://127.0.0.1:5500/website/ABOUT.html">ABOUT US</a></li>
+                  <li><a href="http://127.0.0.1:5500/website/OURSERVICES.html">OUR SERVICES</a></li>
+                  <li><a href="http://127.0.0.1:5500/website/PROJECTS.html">PROJECTS</a></li>
+                  <li><a href="http://127.0.0.1:5500/website/LET'SCONNECT.html">LET'S CONNECT</a></li>
+                  </ul>
+               </div>
+       </div>    
+   </header>
+
+<section class="projects-section">
+ <div class="projects-header">
+<h2>Our <span>Projects</span></h2>
+<p>Explore our portfolio of successful projects that showcase our creativity, technical expertise, and <br>commitment to delivering exceptional results.</p>
+<div class="filter-buttons">
+    <button class="active" data-filter="all">All Projects</button>
+    <button data-filter="video">Video Editing</button>
+    <button data-filter="web">Web Design</button>
+</div>
+<script>
+    const filterButtons = document.querySelectorAll('.filter-buttons button');
+    const projectscard = document.querySelectorAll('.project-card');
+
+    filterButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            document.querySelector('.filter-buttons .active').classList.remove('active');
+            button.classList.add('active');
+
+            const filter = button.getAttribute('data-filter');
+
+            projects.forEach(card => {
+                if (filter === 'all' || card.classList.contains(filter)) {
+                    card.style.display = 'block';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        });
+    });
+</script>
+ </div>
+ <div class="projects-grid">
+    <div class="project-card video">
+        <img src="https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop" alt="Music Video Production">
+        <div class="project-info">
+        <small>🧑‍🎓🧑🏽‍🎓 Student Unit Project.2024</small>
+        <h3>Educative Video Production</h3>
+        <p>Cinematic educative video with advanced visual effects and color grading.</p>
+        <div class="tags">
+            <span>Cinematography</span>
+            <span>VFX</span>
+        </div>
+        <a href="https://youtu.be/pGW8JXN9o1E?si=BeHzbTd2FUzObnd0" class="btn">View</a>
+        </div>
+    </div>
+    <div class="project-card video">
+        <img src="https://images.unsplash.com/photo-1551836022-deb4988cc6c0?w=800&h=600&fit=crop" alt="Brand Identity Creation">
+        <div class="project-info">
+        <small>⛪Redeemed  Church Conference Meeting</small>
+        <h3>Fund Mobilization Campaign</h3>
+        <p>Complete video campaign including product demo, testimonials, and social media content.</p>
+        <div class="tags">
+            <span>Video Editing</span>
+            <span>Motion Graphics</span>
+            <span>Color Grading</span>
+        </div>
+        <a href="https://www.facebook.com/share/v/15tnxYXxCe/" class="btn">View</a>
+        </div>
+    </div>
+    <div class="project-card web">
+        <img src="images/bha.jpeg" alt="SaaS Platform Redesign">
+        <div class="project-info">
+        <small>💻Bright Horizon Academy.2024</small>
+        <h3>School Platform design</h3>
+        <p>Complete UX overhaul improving user engagement by 300%.</p>
+        <div class="tags">
+            <span>UI/UX Design</span>
+            <span>Web Development</span>
+        </div>
+        <a href="https://bright-horizon-academys-site.webflow.io" class="btn">View</a>
+        </div>
+    </div>
+    <div class="project-card web">
+        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop" alt="E-commerce Fashion">
+        <div class="project-info">
+        <small>🛒 StyleHub. 2024</small>
+        <h3>E-commerce Fashion Platform</h3>
+        <p>Modern e-commerce website with advanced filtering and stunning product showcases.</p>
+        <div class="tags">
+            <span>web Development</span>
+            <span>UI/UX Design</span>
+        </div>
+        <a href="#" class="btn">View</a>
+        </div>
+    </div>   
+ </div>
+</section>
+<section>
+         <div class="contact">
+            <h2>LET'S CONNECT</h2>
+            <p>Let's bring your vision to life with our expertise and creativity.</p>
+             <button class="cn"><a href="http://127.0.0.1:5500/website/LET'SCONNECT.html">Start Your Project</a></button>
+        </div> 
+    </section>
+<section>
+        <div class="footer">
+            <p>&copy; 2023 Artistic Lens Edits. All rights reserved.</p>
+            <p>Follow us on:</p>
+                <div class="icons">
+                    <a href="https://www.facebook.com/share/1CW9Vv1Sva/"><ion-icon name="logo-facebook"></ion-icon></a>
+                    <a href="https://www.tiktok.com/@artistic.lens.edits?_t=ZM-90IuEwhyrbn&_r=1"><ion-icon name="logo-tiktok"></ion-icon></a>
+                    <a href="https://www.instagram.com/artistic.lens_.edits?igsh=MTd6bnAyaDd3M3o2NQ=="><ion-icon name="logo-instagram"></ion-icon></a>
+                    <a href="https://youtube.com/@artisticlensedits?si=wtORRVXdEh9SRuxF"><ion-icon name="logo-youtube"></ion-icon></a>
+                </div>  
+        </div>
+    </section>
+
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+
+</body>
+</html>

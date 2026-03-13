@@ -1,0 +1,370 @@
+*{
+margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+body{
+ background:#0b0b22;
+ animation:slideIn 1.2s forwards;
+     transform: translateY(30px);
+     animation-delay: 0.3s;
+     animation-fill-mode: forwards;
+     opacity: 0;
+   }
+    @keyframes slideIn {
+     to { transform: translateY(0); opacity: 1; }
+}
+header{
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+}
+
+.lens-icon{
+    border-radius: 50%;
+     animation: spin 6s linear infinite;
+box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+transition: box-shadow 0.3s ease;
+}
+
+.logo-text{
+    color: #f6f9fa;
+transition: color 0.3s ease;
+}
+
+.logo-text .highlight{
+    color: #c300ff;
+    transition: color 0.3s ease;
+}
+
+  .lens-icon:hover {
+   box-shadow: 0 0 15px #ca07f1;
+   cursor: pointer;
+  }
+
+  .logo-text:hover{
+    color: #c300ff;
+    cursor: pointer;
+  }
+
+  .highlight:hover {
+    color: white;
+    cursor: pointer;
+  }
+   @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+   }
+.ul-navbar{
+    display: flex;
+    align-items: right;
+    float: right;
+   justify-content: center;
+}
+    
+.ul-navbar ul li{
+   display: inline-block;
+   list-style: none;
+   margin: 10px 20px;
+   align-items: center;
+}
+.ul-navbar ul li a{
+    color:white;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.ul-navbar ul li a:hover{     
+    color:#ca07f1 ;
+    cursor: pointer;
+}
+.Aboutus{
+padding: 20px 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+text-align: center;
+}
+.Aboutus h1{
+    font-size: 55px;
+    color: white;
+    margin-bottom: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: 600px;
+    font-weight: bolder;
+}
+.Aboutus h1 strong{
+      background: linear-gradient(90deg, #8a2be2, #ff69b4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: poppins,sans-serif;
+    font-weight: 600px;
+    font-size: 55px;
+}
+.Aboutus p{
+    font-size: 25px;
+    color: rgb(207, 203, 203);;
+    margin-bottom: 20px;
+    font-family: poppins, sans-serif;
+    line-height: 40px;
+}
+.ourstory{
+    padding: 20px 20px;
+    text-align: center;
+}
+.ourstory h2{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: 600px;
+}
+.ourstory p{
+    font-size: 25px;
+    color:  rgb(207, 203, 203);;
+    margin-bottom: 20px;
+    font-family: poppins, sans-serif;
+    line-height: 40px;
+}
+.Ourvalues h2{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    margin-bottom: 10px;
+    font-family: poppins, sans-serif;
+    font-weight: 600px;
+
+}
+.Ourvalues p{
+    text-align: center;
+    font-size: 25px;
+    color: rgb(207, 203, 203);;
+    margin-bottom: 20px;
+    font-family: poppins, sans-serif;
+}
+
+    .gridcontainer {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin: 50px auto;
+        max-width: 800px;
+    }
+    .grid-item{
+        background: rgba(255, 255, 255,0.05);
+        border: 1px solid rgba(255, 255, 255,0.1);
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: transform 0.1s ease-in,box shadow 0.1s  ease-in;
+        height: 290px;
+    }
+    .grid-item:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 8px 20px  #ff69b4;
+        cursor: pointer;
+    }
+    .valueicon{
+        font-size: 50px;
+        color: #ff69b4;
+        margin-bottom: 10px;
+    }
+    .grid-item h3{
+        font-size: 24px;
+        color: rgba(253, 248, 248, 0.959);
+        margin-bottom: 10px;
+        font-family: poppins, sans-serif;
+    }
+    .grid-item p{
+        font-size: 18px;
+        color: rgb(207, 203, 203);
+        font-family: poppins, sans-serif;
+        line-height: 30px;
+    }
+
+    .Ourteam{
+        padding: 20px 20px;
+        text-align: center;
+        max-height: 800px;
+    }
+    .Ourteam h2{
+        font-size: 40px;
+        color: white;
+        margin-bottom: 10px;
+        font-family: poppins, sans-serif;
+        font-weight: 600px;
+    }
+    .Ourteam p{
+        font-size: 25px;
+        color: rgb(207, 203, 203);;
+        margin-bottom: 20px;
+        font-family: poppins, sans-serif;
+        line-height: 40px;
+    }
+    .team-members {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-content: center;
+        gap: 20px;
+    }
+    .member{
+        background: rgba(255, 255, 255,0.05);
+        border: 1px solid rgba(255, 255, 255,0.1);
+        border-radius: 15px;
+        padding: 20px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        transition: transform 0.1s ease-in,box shadow 0.1s  ease-in;
+        height: 350px;
+        width: 600px; 
+    }
+    .member p{
+        font-size: 18px;
+        color: rgb(207, 203, 203);
+        font-family: poppins, sans-serif;
+        line-height: 30px;
+        margin-top: 70px;
+    }
+    .member h3{
+        font-size: 24px;
+        color: rgba(206, 203, 203, 0.959);
+        margin-bottom: 20px;
+        font-family: poppins, sans-serif;
+    }
+    .member img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        margin-top: 10px;
+    }
+
+    .contact{
+        padding: 20px 20px;
+        text-align: left;
+        margin-top: 50px;
+        display: block;
+
+    }
+    .contact h2{
+     background: linear-gradient(90deg, #8a2be2, #f85eab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: poppins,sans-serif;
+    font-weight: 600;
+    font-size: 30px;
+    }
+    .contact p{
+        font-size: 22px;
+        color: rgb(207, 203, 203);;
+        margin-bottom: 20px;
+        font-family: poppins, sans-serif;
+        line-height: 40px;
+    }
+    section .contact{
+        text-align: left;
+        margin-top: 20px;
+        background-color:#1a0b3a;
+        max-height: 800px;
+        margin-bottom: 20px;
+        max-width: 1300px;
+        margin-inline: 20px;
+
+
+    }
+    .contact .cn{
+          background: linear-gradient(90deg, #8a2be2, #ff69b4);
+    border: none;
+    border-radius: 10px;
+    height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    box-shadow:4px 4px 8px #e20bac05, -4px -4px 8px #e20bac00;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+    }
+    .contact .cn a{
+        color: rgb(32, 29, 29);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 1.2rem;
+        transition: color 0.3s ease;
+        padding: 20px;
+    }
+
+    .contact .cn:hover{
+        background: #334f53;
+        box-shadow: 4px 4px 8px #e20bac05, -4px -4px 8px #e20bac05;
+        transform: scale(1.05);
+    }
+    .contact .cn:hover a{
+        color: white;
+    }
+
+   .footer{
+    background:linear-gradient(60deg, #8a2be2, #ff69b4);
+    text-align: center;
+    padding: 20px;
+    color: white;
+    margin-top: 50px;
+}
+.footer p{
+    font-size: 12px;
+    color: antiquewhite;
+   }
+
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.icons ion-icon{
+    color: white;
+    font-size: 20px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover{
+    color: #334f53 ;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+    
+    
+        
+

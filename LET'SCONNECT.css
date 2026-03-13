@@ -1,0 +1,323 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: poppins, sans-serif;
+    color: #333;
+    box-sizing: border-box;
+}
+body {
+ background:#0b0b22;
+  animation:slideIn 1.2s forwards;
+     transform: translateY(30px);
+     animation-delay: 0.3s;
+     animation-fill-mode: forwards;
+     opacity: 0;
+   }
+    @keyframes slideIn {
+     to { transform: translateY(0); opacity: 1; }
+}
+header{
+    background-color: rgba(0, 0, 0, 0.7);
+    
+}
+.navbar{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px 40px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    font-weight: 600;
+    color: #111;
+    padding: 20px 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+transition: all 0.3s ease;
+}
+
+.lens-icon{
+    border-radius: 50%;
+     animation: spin 6s linear infinite;
+box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+transition: box-shadow 0.3s ease;
+}
+
+.logo-text{
+    color: #f6f9fa;
+transition: color 0.3s ease;
+}
+
+.logo-text .highlight{
+    color: #c300ff;
+    transition: color 0.3s ease;
+}
+
+  .lens-icon:hover {
+   box-shadow: 0 0 15px #ca07f1;
+   cursor: pointer;
+  }
+
+  .logo-text:hover{
+    color: #c300ff;
+    cursor: pointer;
+  }
+
+  .highlight:hover {
+    color: white;
+    cursor: pointer;
+  }
+   @keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+   }
+.ul-navbar{
+    display: flex;
+    align-items: right;
+    float: right;
+   justify-content: center;
+}
+    
+.ul-navbar ul li{
+   display: inline-block;
+   list-style: none;
+   margin: 10px 20px;
+   align-items: center;
+}
+.ul-navbar ul li a{
+    color:white;
+    font-weight: 500;
+    font-family: sans-serif;
+    font-size: 10px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.ul-navbar ul li a:hover{     
+    color:#ca07f1 ;
+    cursor: pointer;
+}
+section{
+    max-width: 1400px;
+}
+.contactdetails{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+.cta{
+    text-align: center;
+    padding: 50px 20px 20px 20px;
+    font-family: 'Poppins', sans-serif;
+}
+.cta h1{
+    font-size: 2.5rem;
+    color: white;
+}
+.cta h1 strong{
+     background: linear-gradient(90deg, #8a2be2, #f85eab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: poppins,sans-serif;
+    font-weight: 600px;
+    font-size: 40px;
+    }
+    .cta p{
+        color: white;
+        font-size: 22px;
+        margin-block: 20px;
+    }
+
+.formcontainer{
+    width: 450px;
+    height: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(12px) saturate(180%);
+    -webkit-backdrop-filter: blur(12px) saturate(180%);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: #ffffff62;
+    margin-inline: 40px;
+    transition: 0.3s ease;
+    margin: 50px auto;
+}
+    
+
+.formcontainer h1{
+    font-size: 1.5rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: blueviolet;
+}
+.icon{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 2rem;
+    color: blueviolet;
+}
+.formcontainer form{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+    text-align: left;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 500;
+    
+}
+.formcontainer form input, .formcontainer form textarea{
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background: rgba(180, 174, 174, 0.842);
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+    transition: 0.3s ease;
+}
+.formcontainer form input:focus, .formcontainer form textarea:focus{
+    outline: none;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.932);
+}
+.formcontainer form button{
+    padding: 0.8rem;
+    border-radius: 5px;
+    border: none;
+    background-color: #6e6b6b;
+    color: white;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 90px;
+    align-self: flex-end;
+}
+.formcontainer form label{
+    color: white;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+}
+.formcontainer form button:hover{
+  box-shadow: 0 0 15px #4dabf7b6,0 0 25px #1c92f2;
+  border: 1px solid #4dabf7b6;
+  transform: translateY(-3px)scale(1.05);
+  background: rgba(161, 96, 221, 0.856);
+}
+.formcontainer:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #4dabf7b6,0 0 25px #1c92f2;
+}
+.contact-container{
+    max-width: 800px;
+    margin: 10px auto;
+    padding: 20px;
+    text-align: center;
+}
+.contact-container h2{
+    font-size: 35px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: poppins, sans-serif;
+    font-weight: 600;
+}
+.contact-container p{
+    font-size: 1.2rem;
+    color: #bbb;
+    margin-bottom: 30px;
+}
+.card{
+    background: #1a2230;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 15px 0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+.card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #4dabf7b6,0 0 25px #1c92f2;
+    border: 1px solid #4dabf7b6;
+}
+.icon{
+    font-size: 20px;
+    color: white;
+    flex-shrink: 0;
+    justify-content: center;
+    background: linear-gradient(135deg,#4dabf7,#1c92f2);
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+}
+.card-content{
+    text-align: left;
+}
+.card-content h3{
+    font-size: 1.1rem;
+    margin:0;
+    color: #fff;
+}
+.card-content p{
+    font-size: 0.9rem;
+    color: #bbb;
+    margin:3px 0;
+}
+.card-content a{
+    color: #4dabf7;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+.card-content a:hover{
+    text-decoration: underline;
+}
+.footer{
+    max-width: 1400px;
+    background:  linear-gradient(60deg, #8a2be2, #ff69b4);
+    text-align: center;
+} 
+
+.footer p{
+    font-size: 12px;
+    color: antiquewhite;
+   }
+
+.icons a{
+    text-decoration: none;
+    color: white;
+}
+.icons ion-icon{
+    color: white;
+    font-size: 20px;
+    padding-left: 14px;
+    padding-top: 5px;
+    transition: 0.3s ease;
+}
+
+.icons ion-icon:hover{
+    color: #334f53 ;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+
+    
+    
+        
+
